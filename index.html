@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio profesional de Gabriel Porto Camarillo, Junior Full Stack Developer." />
+  <title>Gabriel Porto Camarillo | Portafolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio">Gabriel Porto Camarillo</a>
+      <nav class="nav-links" aria-label="Principal">
+        <a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a>
+        <a href="#perfil" data-i18n="nav.profile">Perfil</a>
+        <a href="#experiencia" data-i18n="nav.experience">Experiencia</a>
+        <a href="#habilidades" data-i18n="nav.skills">Habilidades</a>
+        <a href="#proyectos" data-i18n="nav.projects">Proyectos</a>
+        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+      </nav>
+      <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Cambiar idioma">
+        <span id="lang-es" class="active">ES</span>
+        <span>/</span>
+        <span id="lang-en">EN</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Junior Full Stack Developer</p>
+        <h1 data-i18n="hero.title">Construyo productos digitales y automatizaciones claras, funcionales y escalables.</h1>
+        <p class="lead" data-i18n="hero.description">
+          Desarrollo aplicaciones Full Stack con enfoque en rendimiento, automatización y experiencia de usuario.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#proyectos" data-i18n="hero.ctaProjects">Ver proyectos</a>
+          <a class="btn btn-ghost" href="#contacto" data-i18n="hero.ctaContact">Contactarme</a>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <img src="assets/profile.jpeg" alt="Foto de Gabriel Porto Camarillo" class="profile-image" />
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="section container">
+      <h2 data-i18n="about.title">Sobre mí</h2>
+      <p data-i18n="about.text1">
+        Soy desarrollador junior enfocado en el stack MEAN/MERN, con experiencia construyendo productos reales y desplegándolos en producción.
+      </p>
+      <p data-i18n="about.text2">
+        Me especializo en backend con Node.js y Express, integración de APIs, y automatización de procesos con n8n y Docker.
+      </p>
+    </section>
+
+    <section id="perfil" class="section container">
+      <h2 data-i18n="profile.title">Perfil académico e idiomas</h2>
+      <div class="cards two-columns">
+        <article class="card">
+          <h3 data-i18n="profile.language.title">Idioma</h3>
+          <p data-i18n="profile.language.text">Inglés B2.</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="profile.education.title">Estudio</h3>
+          <p data-i18n="profile.education.text">Instituto Tecnológico de Aguascalientes · Status: actualmente · Ingresé en 2023.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experiencia" class="section container">
+      <h2 data-i18n="experience.title">Experiencia</h2>
+      <div class="cards two-columns">
+        <article class="card">
+          <h3 data-i18n="experience.item1.title">Inadaptados Program</h3>
+          <p data-i18n="experience.item1.text">Perfeccionamiento técnico en MEAN/MERN, arquitectura escalable y buenas prácticas de desarrollo Full Stack.</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="experience.item2.title">Informatic-Help-Agency</h3>
+          <p data-i18n="experience.item2.text">Participación en procesos de automatización para optimizar operación interna, reducir tareas manuales y acelerar tiempos de respuesta.</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="experience.item3.title">App de registros biométricos (checkadores)</h3>
+          <p data-i18n="experience.item3.text">Implementación de una solución de registros biométricos usando SDK de Identity.io para validación de identidad y control de asistencias.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="habilidades" class="section container">
+      <h2 data-i18n="skills.title">Habilidades</h2>
+      <div class="skills-groups">
+        <article class="card">
+          <h3 data-i18n="skills.group1.title">Desarrollo Web</h3>
+          <div class="chip-grid">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">Express</span>
+            <span class="chip">Angular</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">Git</span>
+            <span class="chip">GitHub</span>
+            <span class="chip">n8n</span>
+          </div>
+        </article>
+        <article class="card">
+          <h3 data-i18n="skills.group2.title">IA Generativa</h3>
+          <div class="chip-grid">
+            <span class="chip">ChatGPT</span>
+            <span class="chip">Gemini</span>
+            <span class="chip">Google Antigravity</span>
+            <span class="chip">Codex</span>
+          </div>
+        </article>
+        <article class="card">
+          <h3 data-i18n="skills.group3.title">Herramientas de Desarrollo y DevOps</h3>
+          <div class="chip-grid">
+            <span class="chip">Docker</span>
+            <span class="chip">Render</span>
+            <span class="chip">Android Studio</span>
+            <span class="chip">Postman</span>
+            <span class="chip">PM2</span>
+            <span class="chip">VS Code</span>
+            <span class="chip">Git Flow</span>
+            <span class="chip">Scrum</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section container">
+      <h2 data-i18n="projects.title">Proyectos relevantes</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>E-commerce Informatic-Help-Agency</h3>
+          <p data-i18n="projects.item1">Plataforma e-commerce con estructura robusta de frontend y backend para operaciones reales.</p>
+        </article>
+        <article class="card">
+          <h3>identy.io</h3>
+          <p data-i18n="projects.item2">Plataforma integral para la gestión de identidad digital y procesos asociados.</p>
+        </article>
+        <article class="card">
+          <h3>Google Antigravity & Codex</h3>
+          <p data-i18n="projects.item3">Proyectos experimentales enfocados en interfaces innovadoras y lógica avanzada.</p>
+        </article>
+        <article class="card">
+          <h3>Moodle-AI Bridge</h3>
+          <p data-i18n="projects.item4">Automatización de eventos de calendario con Node.js y PM2 para flujos académicos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto" class="section container contact">
+      <h2 data-i18n="contact.title">Contacto</h2>
+      <p data-i18n="contact.subtitle">Disponible para oportunidades junior Full Stack y proyectos freelance.</p>
+      <div class="contact-links">
+        <a class="contact-btn" href="https://www.linkedin.com/in/gabriel-porto-camarillo/" target="_blank" rel="noreferrer">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 8.5v8.56H4.09V8.5h2.85Zm.19-2.65c0 .83-.62 1.5-1.61 1.5h-.02c-.96 0-1.58-.67-1.58-1.5 0-.85.64-1.5 1.62-1.5s1.57.65 1.59 1.5Zm10.78 6.3v4.9h-2.84v-4.57c0-1.15-.42-1.93-1.45-1.93-.79 0-1.26.53-1.47 1.04-.07.18-.09.43-.09.68v4.78H9.22s.04-7.76 0-8.56h2.84v1.21c.38-.58 1.05-1.39 2.56-1.39 1.87 0 3.29 1.22 3.29 3.84Z"/></svg>
+          </span>
+          <span>LinkedIn</span>
+        </a>
+        <a class="contact-btn" href="https://github.com/Gabriel24012" target="_blank" rel="noreferrer">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.05c-3.34.73-4.04-1.41-4.04-1.41-.55-1.37-1.33-1.73-1.33-1.73-1.08-.73.08-.71.08-.71 1.2.09 1.84 1.23 1.84 1.23 1.06 1.82 2.79 1.3 3.47.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.91 0-1.3.47-2.37 1.23-3.2-.12-.3-.54-1.53.12-3.19 0 0 1.01-.32 3.3 1.22a11.4 11.4 0 0 1 6 0c2.28-1.54 3.29-1.22 3.29-1.22.66 1.66.25 2.89.12 3.19.77.83 1.23 1.9 1.23 3.2 0 4.59-2.81 5.61-5.48 5.9.44.38.82 1.11.82 2.24v3.32c0 .32.22.7.82.58A12 12 0 0 0 12 .5Z"/></svg>
+          </span>
+          <span>GitHub</span>
+        </a>
+        <a class="contact-btn" href="mailto:porto1472@gmail.com">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 5.5A2.5 2.5 0 0 1 5.5 3h13A2.5 2.5 0 0 1 21 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 18.5v-13Zm2 1.02v.24l6.62 4.79a.66.66 0 0 0 .76 0L19 6.76v-.24a.5.5 0 0 0-.5-.5h-13a.5.5 0 0 0-.5.5Zm14 2.71-5.45 3.95a2.66 2.66 0 0 1-3.1 0L5 9.23v9.27c0 .28.22.5.5.5h13a.5.5 0 0 0 .5-.5V9.23Z"/></svg>
+          </span>
+          <span>Email</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Gabriel Porto Camarillo</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
