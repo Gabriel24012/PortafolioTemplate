@@ -268,6 +268,10 @@ const chatbotCopy = {
       experience: {
         question: "¿Qué experiencia tiene?",
         answer: "Tiene experiencia en proyectos reales y experimentales con stack MEAN/MERN, backend con Node.js, integración de APIs, automatización con n8n y Docker, además de trabajo con SDKs externos como IDENTY.IO."
+      },
+      companies: {
+        question: "¿Con qué empresas ha trabajado?",
+        answer: "Gabriel ha trabajado o colaborado en proyectos relacionados con Informatic-Help-Agency e IDENTY.IO. En Informatic-Help-Agency participó en automatización de procesos y e-commerce; con IDENTY.IO trabajó en flujos de identidad digital y validación biométrica."
       }
     }
   },
@@ -302,6 +306,10 @@ const chatbotCopy = {
       experience: {
         question: "What experience does he have?",
         answer: "He has experience in real and experimental projects with the MEAN/MERN stack, Node.js backend, API integrations, automation with n8n and Docker, and external SDK work such as IDENTY.IO."
+      },
+      companies: {
+        question: "Which companies has he worked with?",
+        answer: "Gabriel has worked or collaborated on projects related to Informatic-Help-Agency and IDENTY.IO. At Informatic-Help-Agency, he contributed to process automation and e-commerce; with IDENTY.IO, he worked on digital identity and biometric validation flows."
       }
     }
   }
@@ -341,6 +349,7 @@ function detectTopic(message) {
 
   if (/(contact|correo|email|linkedin|github|contratar|contacto)/.test(text)) return "contact";
   if (/(ingles|english|idioma|language|b2)/.test(text)) return "language";
+  if (/(empresa|empresas|company|companies|trabajado|worked|colaborado|collaborated|informatic|identy)/.test(text)) return "companies";
   if (/(backend|node|express|api|apis|docker|pm2|deploy|render)/.test(text)) return "backend";
   if (/(ia|ai|codex|chatgpt|gemini|pdf|forex|trading|legislativo|legislative)/.test(text)) return "ai";
   if (/(proyecto|project|portafolio|ecommerce|moodle|bridge)/.test(text)) return "projects";
