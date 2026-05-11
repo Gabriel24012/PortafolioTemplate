@@ -17,7 +17,7 @@
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="#inicio">Gabriel Porto Camarillo</a>
-      <nav class="nav-links" aria-label="Principal">
+      <nav class="nav-links" aria-label="Principal" data-i18n-aria-label="aria.nav">
         <a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a>
         <a href="#perfil" data-i18n="nav.profile">Perfil</a>
         <a href="#experiencia" data-i18n="nav.experience">Experiencia</a>
@@ -37,14 +37,41 @@
     <section class="hero container">
       <div class="hero-copy">
         <p class="eyebrow" data-i18n="hero.eyebrow">Junior Full Stack Developer</p>
-        <h1 data-i18n="hero.title">Construyo productos digitales y automatizaciones claras, funcionales y escalables.
+        <h1 data-i18n="hero.title">Desarrollo aplicaciones Full Stack con backend sólido, automatización y enfoque en
+          producto.
         </h1>
         <p class="lead" data-i18n="hero.description">
-          Desarrollo aplicaciones Full Stack con enfoque en rendimiento, automatización y experiencia de usuario.
+          Soy Gabriel Porto Camarillo, desarrollador junior enfocado en crear interfaces claras, APIs funcionales y
+          flujos automatizados que resuelven necesidades reales.
         </p>
+        <div class="hero-signals" aria-label="Especialidades principales" data-i18n-aria-label="aria.heroSignals">
+          <span data-i18n="hero.signal1">Full Stack</span>
+          <span data-i18n="hero.signal2">Node.js</span>
+          <span data-i18n="hero.signal3">Automatización</span>
+          <span data-i18n="hero.signal4">Deploy</span>
+        </div>
         <div class="hero-cta">
           <a class="btn btn-primary" href="#proyectos" data-i18n="hero.ctaProjects">Ver proyectos</a>
           <a class="btn btn-ghost" href="#contacto" data-i18n="hero.ctaContact">Contactarme</a>
+          <div class="resume-download">
+            <span data-i18n="hero.ctaResume">Descargar CV</span>
+            <a href="assets/CV_Gabriel_Porto_ActualizadoES.pdf" download data-i18n="hero.resumeSpanish">Español</a>
+            <a href="assets/CV_Gabriel_Porto_ActualizadoEN.pdf" download data-i18n="hero.resumeEnglish">Inglés</a>
+          </div>
+        </div>
+        <div class="hero-proof" aria-label="Puntos fuertes" data-i18n-aria-label="aria.heroProof">
+          <div>
+            <strong>MEAN/MERN</strong>
+            <span data-i18n="hero.proof1">Stack principal</span>
+          </div>
+          <div>
+            <strong>APIs + Docker</strong>
+            <span data-i18n="hero.proof2">Backend y despliegue</span>
+          </div>
+          <div>
+            <strong>ES / EN B2</strong>
+            <span data-i18n="hero.proof3">Comunicación bilingüe</span>
+          </div>
         </div>
       </div>
       <div class="hero-image-wrap">
@@ -147,28 +174,112 @@
       </div>
     </section>
 
+    <section id="aporte" class="section container value-section">
+      <div class="section-heading">
+        <h2 data-i18n="value.title">Lo que puedo aportar</h2>
+        <p class="section-intro" data-i18n="value.subtitle">Puedo integrarme a un equipo junior aportando criterio técnico, velocidad de aprendizaje y enfoque en construir soluciones útiles.</p>
+      </div>
+
+      <div class="value-grid">
+        <article class="value-card">
+          <span class="value-number">01</span>
+          <h3 data-i18n="value.item1.title">Desarrollo Full Stack</h3>
+          <p data-i18n="value.item1.text">Construcción de interfaces claras conectadas a backend, APIs y bases de datos con estructura mantenible.</p>
+        </article>
+        <article class="value-card">
+          <span class="value-number">02</span>
+          <h3 data-i18n="value.item2.title">Automatización de procesos</h3>
+          <p data-i18n="value.item2.text">Reducción de tareas manuales con scripts, n8n, PM2 y flujos pensados para operación continua.</p>
+        </article>
+        <article class="value-card">
+          <span class="value-number">03</span>
+          <h3 data-i18n="value.item3.title">Integración con IA y APIs</h3>
+          <p data-i18n="value.item3.text">Uso de IA generativa, SDKs externos y APIs para crear prototipos, extraer información y conectar sistemas.</p>
+        </article>
+        <article class="value-card">
+          <span class="value-number">04</span>
+          <h3 data-i18n="value.item4.title">Mentalidad de producto</h3>
+          <p data-i18n="value.item4.text">Enfoque en entender el problema, ordenar la solución y entregar experiencias simples para usuarios reales.</p>
+        </article>
+      </div>
+    </section>
+
     <section id="proyectos" class="section container">
       <h2 data-i18n="projects.title">Proyectos relevantes</h2>
-      <div class="cards">
-        <article class="card">
+      <p class="section-intro" data-i18n="projects.subtitle">Casos donde he aplicado frontend, backend, automatización e integración de servicios para resolver necesidades reales.</p>
+      <div class="project-grid">
+        <article class="card project-card featured-project">
+          <div class="project-topline">
+            <span class="project-type" data-i18n="projects.type.fullstack">Full Stack</span>
+            <span class="project-status" data-i18n="projects.status.real">Proyecto real</span>
+          </div>
           <h3>E-commerce Informatic-Help-Agency</h3>
-          <p data-i18n="projects.item1">Plataforma e-commerce con estructura robusta de frontend y backend para
-            operaciones reales.</p>
+          <p data-i18n="projects.item1">Plataforma e-commerce con frontend y backend para centralizar catálogo, operación comercial y flujos de atención.</p>
+          <ul class="project-highlights">
+            <li data-i18n="projects.item1.point1">Estructura pensada para separar interfaz, lógica de negocio y datos.</li>
+            <li data-i18n="projects.item1.point2">Base para integrar procesos operativos y automatizaciones internas.</li>
+          </ul>
+          <div class="project-stack">
+            <span>JavaScript</span>
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>MongoDB</span>
+          </div>
         </article>
-        <article class="card">
+
+        <article class="card project-card">
+          <div class="project-topline">
+            <span class="project-type" data-i18n="projects.type.integration">Integración</span>
+            <span class="project-status" data-i18n="projects.status.identity">Identidad digital</span>
+          </div>
           <h3>IDENTY.IO</h3>
-          <p data-i18n="projects.item2">Plataforma integral para la gestión de identidad digital y procesos asociados.
-          </p>
+          <p data-i18n="projects.item2">Implementación de flujos relacionados con validación biométrica, identidad digital y control de asistencias.</p>
+          <ul class="project-highlights">
+            <li data-i18n="projects.item2.point1">Uso de SDK externo para conectar validación de identidad con procesos del sistema.</li>
+            <li data-i18n="projects.item2.point2">Enfoque en confiabilidad, captura de datos y experiencia clara para usuarios finales.</li>
+          </ul>
+          <div class="project-stack">
+            <span>SDK</span>
+            <span>APIs</span>
+            <span>Backend</span>
+          </div>
         </article>
-        <article class="card">
+
+        <article class="card project-card">
+          <div class="project-topline">
+            <span class="project-type" data-i18n="projects.type.ai">IA + Web</span>
+            <span class="project-status" data-i18n="projects.status.experimental">Experimental</span>
+          </div>
           <h3>Google Antigravity & Codex</h3>
-          <p data-i18n="projects.item3">Proyectos experimentales enfocados en interfaces innovadoras y lógica avanzada.
-          </p>
+          <p data-i18n="projects.item3">Desarrollo asistido con IA para construir prototipos avanzados, incluyendo un bot de trading Forex y lectura inteligente de PDFs legislativos.</p>
+          <ul class="project-highlights">
+            <li data-i18n="projects.item3.point1">Bot de trading Forex con lógica de análisis, automatización y apoyo para toma de decisiones.</li>
+            <li data-i18n="projects.item3.point2">Lectura de PDFs con IA para extraer, interpretar y organizar información de procesos legislativos.</li>
+          </ul>
+          <div class="project-stack">
+            <span>Codex</span>
+            <span>Python</span>
+            <span>IA</span>
+            <span>PDF</span>
+          </div>
         </article>
-        <article class="card">
+
+        <article class="card project-card">
+          <div class="project-topline">
+            <span class="project-type" data-i18n="projects.type.automation">Automatización</span>
+            <span class="project-status" data-i18n="projects.status.experimental">Experimental</span>
+          </div>
           <h3>Moodle-AI Bridge</h3>
-          <p data-i18n="projects.item4">Automatización de eventos de calendario con Node.js y PM2 para flujos
-            académicos por medio de scripts.</p>
+          <p data-i18n="projects.item4">Automatización de eventos de calendario y flujos académicos usando scripts con ejecución persistente.</p>
+          <ul class="project-highlights">
+            <li data-i18n="projects.item4.point1">Scripts en Node.js para reducir tareas repetitivas y mantener procesos activos.</li>
+            <li data-i18n="projects.item4.point2">Uso de PM2 para operación continua y mejor control de ejecución.</li>
+          </ul>
+          <div class="project-stack">
+            <span>Node.js</span>
+            <span>PM2</span>
+            <span>Scripts</span>
+          </div>
         </article>
       </div>
     </section>
@@ -208,6 +319,46 @@
       </div>
     </section>
   </main>
+
+  <div class="chatbot" id="recruiter-chatbot">
+    <button class="chatbot-toggle" id="chatbot-toggle" type="button" aria-expanded="false"
+      aria-controls="chatbot-panel">
+      <span data-i18n="chat.toggle">Pregúntame sobre Gabriel</span>
+    </button>
+
+    <section class="chatbot-panel" id="chatbot-panel" aria-label="Chatbot para reclutadores"
+      data-i18n-aria-label="aria.chatPanel" hidden>
+      <div class="chatbot-header">
+        <div>
+          <h2 data-i18n="chat.title">Asistente para reclutadores</h2>
+          <p data-i18n="chat.subtitle">Respuestas rápidas sobre habilidades, proyectos y contacto.</p>
+        </div>
+        <button class="chatbot-close" id="chatbot-close" type="button" aria-label="Cerrar chat"
+          data-i18n-aria-label="chat.close">&times;</button>
+      </div>
+
+      <div class="chatbot-messages" id="chatbot-messages" aria-live="polite"></div>
+
+      <div class="chatbot-questions" aria-label="Preguntas sugeridas" data-i18n-aria-label="aria.chatQuestions">
+        <button type="button" data-chat-topic="skills" data-i18n="chat.q.skills">Habilidades</button>
+        <button type="button" data-chat-topic="projects" data-i18n="chat.q.projects">Proyectos</button>
+        <button type="button" data-chat-topic="backend" data-i18n="chat.q.backend">Backend</button>
+        <button type="button" data-chat-topic="ai" data-i18n="chat.q.ai">IA</button>
+        <button type="button" data-chat-topic="contact" data-i18n="chat.q.contact">Contacto</button>
+      </div>
+
+      <form class="chatbot-form" id="chatbot-form">
+        <input id="chatbot-input" type="text" autocomplete="off" data-i18n-placeholder="chat.placeholder"
+          placeholder="Pregunta sobre Gabriel..." />
+        <button type="submit" data-i18n="chat.send">Enviar</button>
+      </form>
+    </section>
+  </div>
+
+  <aside class="bottom-message" id="bottom-message" aria-live="polite">
+    <p data-i18n="bottom.message">Si llegaste hasta aquí es por algo, ponte en contacto conmigo y estoy listo para
+      proponer soluciones reales a problemas reales :)</p>
+  </aside>
 
   <footer class="site-footer">
     <div class="container">
